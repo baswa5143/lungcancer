@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>baswa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  input[type=text],select{
+  width: 23%;
+  height: 45px;
+  padding: 4px 30px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgb(195, 172, 214);
+  font-weight: bold;
+  text-align: center;
+}
+::placeholder{
+  font-weight: bold;
+  font-stretch: normal;
+  color: rgba(0, 0, 0, 0.717);
+}
+.select:hover,.select:focus,.sel:focus,.sel:hover{
+        outline: none;
+        border: 1px solid #bbb;
+        
+    }
+.select option{
+  background: rgb(206, 192, 207);
+        text-align: center;
+        border-radius: 8px;
+}
+button{
+  height: 40px;
+  width: 120px;
+}
+body
+   {
+   
+   background-repeat:no-repeat;
+   background-size:cover;
+   }
+   .custom-option {
+     position: relative;
+     display: block;
+     font-size: 14px;
+     font-weight: 300;
+     color: #3b3b3b;
+     line-height: 180px;
+     cursor: pointer;
+     transition: all 0.5s;
+     
+     text-align: center;
+} 
+.custom-options{
+     position: absolute;
+     display: block;
+     top: 100%;
+     left: 0;
+     right: 0;
+     border: 2px solid #394a6d;
+     border-top: 0;
+     background: #fff;
+     transition: all 0.5s;
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+     z-index: 2;
+     border-radius: 8px;
+} 
+   
+</style>
+<body background="https://images.saymedia-content.com/.image/t_share/MTc4NzM1OTc4MzE0MzQzOTM1/how-to-create-cool-website-backgrounds-the-ultimate-guide.png">
+<br><br><br>
+<div class="container">
+  <form align="center" action="/predict" method="post">
+    <label for= gender></label>
+    <select id="gender" name="gender"  required="required" class="select">
+    <option value="" disabled selected hidden>Gender</option>
+    <option value="1" class="custom-option">Male</option>
+    <option value="0" class="custom-option">Female</option>
+    </select>&emsp;&emsp; &emsp;&emsp;
+    <input type="text" name="age"  placeholder="Age" required="required" autocomplete="off" maxlength="2" class="sel">
+    <label for='tellow fingers'></label>&emsp;&emsp; &emsp;&emsp;
+    
+    <select id="yellow_fingers" name="yellow_fingers" required="required" class="select">
+    <option value="" disabled selected hidden>Yellow Fingers</option>
+    <option value="1" class="custom-option">Yes</option>
+    <option value="0" class="custom-option">No</option>
+    </select><br><br>
+    <select id="anxiety" name="anxiety" required="required" class="select" >
+      <option value="" disabled selected hidden>Anxiety </option>
+      <option value="1" class="custom-option">Yes</option>
+      <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="peer_pressure" name="peer_pressure" required="required" class="select">
+        <option value="" disabled selected hidden>Peer Pressure</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select> &emsp;&emsp; &emsp;&emsp;
+      <select id="Chronic_disease" name="Chronic_disease" required="required" class="select">
+        <option value="" disabled selected hidden>Chronic Disease</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select><br><br>
+      <select id="fatigue" name="fatigue" required="required" class="select">
+        <option value="" disabled selected hidden>Fatigue</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="Allergy" name="Allergy" required="required" class="select">
+        <option value="" disabled selected hidden>Allergy</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="wheezing" name="wheezing" required="required" class="select">
+        <option value="" disabled selected hidden>wheezing</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select> <br><br>
+      <select id="Alcohol" name="Alcohol" required="required" class="select">
+        <option value="" disabled selected hidden>Alcohol</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="Coughing" name="Coughing" required="required" class="select">
+        <option value="" disabled selected hidden>Coughing</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="shortness_of_breath" name="shortness_of_breath" required="required" class="select">
+        <option value="" disabled selected hidden>Shortness of Breath</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select><br><br>
+      <select id="swallowing_difficulty" name="swallowing_difficulty" required="required" class="select">
+        <option value="" disabled selected hidden>Swallowing Difficulty</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="Chest_pain" name="Chest_pain" required="required" class="select">
+        <option value="" disabled selected hidden>Chest Pain</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select>&emsp;&emsp; &emsp;&emsp;
+      <select id="smoking" name="smoking" required="required" class="select">
+        <option value="" disabled selected hidden>Smoking</option>
+        <option value="1" class="custom-option">Yes</option>
+        <option value="0" class="custom-option">No</option>
+      </select><br><br><br><br>
+    
+<button class="btn btn-primary">predict</button>
+</form>
+</div>
+<div class="row">
+  
+  <h2>{{prediction}}</h2>
+  
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
